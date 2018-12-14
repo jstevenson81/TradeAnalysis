@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>TradeAnalysis.Console.App</RootNamespace>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="Binance.Net" Version="4.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TradeAnalysis.Contracts\TradeAnalysis.Contracts.csproj" />
+    <ProjectReference Include="..\TradeAnalysis.Data\TradeAnalysis.Data.csproj" />
+    <ProjectReference Include="..\TradeAnalysis.Mapping\TradeAnalysis.Mapping.csproj" />
+    <ProjectReference Include="..\TradeAnalysis.Models\TradeAnalysis.Models.csproj" />
+  </ItemGroup>
+
+</Project>
