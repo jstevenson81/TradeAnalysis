@@ -5,19 +5,19 @@ using AutoMapper;
 using Binance.Net.Objects;
 using CryptoExchange.Net.Authentication;
 using Newtonsoft.Json;
-using TradeAnalysis.Data;
 using TradeAnalysis.Mapping.Extensions;
 using TradeAnalysis.Mapping.Profiles;
+using TradeAnalysis.Models;
 
 namespace TradeAnalysis.Console.App
 {
     class Program
     {
-        
+
 
         static async Task Main(string[] args)
         {
-            Mapper.Initialize(x=>x.AddProfiles(typeof(BinanceApiToDomainProfiles)));
+            Mapper.Initialize(x => x.AddProfiles(typeof(BinanceApiToDomainProfiles)));
             Mapper.AssertConfigurationIsValid();
             var apiConfig = new ApiConfig
             {
@@ -29,12 +29,12 @@ namespace TradeAnalysis.Console.App
                 new BinanceClientOptions {ApiCredentials = new ApiCredentials(apiConfig.Key, apiConfig.Secret)});
 
             var trades = await client.GetMyTradesAsync("BCHSVUSDT");
-            var orders = await client.GetAllOrdersAsync("BCHSVUSDT");
+            var orders = await client.GetAllOrdersAsync("BCHSVUSDT", 7617563);
 
             var myOrders = Mapper.Map<List<Order>>(orders.Data);
             var myTrades = Mapper.Map<List<Trade>>(trades.Data);
 
-            foreach (var myTrade in myTrades.OrderBy(x=>x.ExchangeOrderId))
+            foreach (var myTrade in myTrades.OrderBy(x => x.ExchangeOrderId))
             {
                 var order = myOrders.FirstOrDefault(x => x.ExchangeOrderId.Equals(myTrade.ExchangeOrderId));
                 if (order != null && !order.Trades.Any(x => x.ExchangeTradeId.Equals(myTrade.ExchangeTradeId)))

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TradeAnalysis.Data
+namespace TradeAnalysis.Models
 {
     interface IModel: IDisposable
     {
@@ -30,6 +30,9 @@ namespace TradeAnalysis.Data
             set => _id = value;
         }
 
+        public bool Active { get; set; }
+        public bool InactiveTime { get; set; }
+
         #endregion
 
         #region methods
@@ -52,8 +55,7 @@ namespace TradeAnalysis.Data
     public class User : ModelBase
     {
         public string DisplayName { get; set; }
-        public List<UserEmailAddress> EmailAddresses { get; set; }
-
+        public List<string> EmailAddresses { get; set; }
 
         public User()
         {
@@ -64,14 +66,10 @@ namespace TradeAnalysis.Data
 
     public class UserEmailAddress : ModelBase
     {
-        public User User { get; set; }
-        public string EmailAddress { get; set; }
-    }
-
-    public class UserOrders : ModelBase
-    {
-        public string OrderId { get; set; }
         public string UserId { get; set; }
+        public string EmailAddress { get; set; }
+        public bool Primary { get; set; }
+        
     }
 
     public class Trade : ModelBase
@@ -87,6 +85,7 @@ namespace TradeAnalysis.Data
 
     public class Order : ModelBase
     {
+        public string UserId { get; set; }
         public int ExchangeOrderId { get; set; }
         public string Symbol { get; set; }
         public string Type { get; set; }
