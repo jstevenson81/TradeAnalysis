@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TradeAnalysis.Models
 {
-    interface IModel: IDisposable
+    public interface IModel: IDisposable
     {
         string Id { get; set; }
     }
