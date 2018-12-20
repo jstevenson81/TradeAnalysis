@@ -5,19 +5,19 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TradeAnalysis.Functions", "TradeAnalysis.Functions\TradeAnalysis.Functions.csproj", "{67E796C9-F414-49F5-AA76-57907D7AB52D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TradeAnalysis.Data", "TradeAnalysis.Data\TradeAnalysis.Data.csproj", "{A3615FD7-99D7-439F-BFAB-E92A3939F49A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TradeAnalysis.Console", "TradeAnalysis.Console\TradeAnalysis.Console.csproj", "{28CFA86C-5E9B-4D98-A2D1-4E987818AA7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeAnalysis.Console", "TradeAnalysis.Console\TradeAnalysis.Console.csproj", "{28CFA86C-5E9B-4D98-A2D1-4E987818AA7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TradeAnalysis.Contracts", "TradeAnalysis.Contracts\TradeAnalysis.Contracts.csproj", "{CA8F9E8F-1A6B-4875-8FC1-D4CDF22C3E46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeAnalysis.Contracts", "TradeAnalysis.Contracts\TradeAnalysis.Contracts.csproj", "{CA8F9E8F-1A6B-4875-8FC1-D4CDF22C3E46}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeAnalysis.Models", "TradeAnalysis.Models\TradeAnalysis.Models.csproj", "{69570637-7FD0-4B25-9D29-69CE78B435DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TradeAnalysis.Models", "TradeAnalysis.Models\TradeAnalysis.Models.csproj", "{69570637-7FD0-4B25-9D29-69CE78B435DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Infrastructure", "01 - Infrastructure", "{4FAE180D-5435-43A7-A748-6C0BF8963ED0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Services", "02 - Services", "{D6B993E1-B9B0-45B6-9B3A-A30FBEBBE8B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeAnalysis.Mapping", "TradeAnalysis.Mapping\TradeAnalysis.Mapping.csproj", "{921D5D8A-1790-44B0-8209-D35C5D2F4EAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TradeAnalysis.Mapping", "TradeAnalysis.Mapping\TradeAnalysis.Mapping.csproj", "{921D5D8A-1790-44B0-8209-D35C5D2F4EAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeAnalysis.Services", "TradeAnalysis.Services\TradeAnalysis.Services.csproj", "{8B38E1EA-F78E-456E-9214-99D37571A85E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,6 @@ Global
 		{67E796C9-F414-49F5-AA76-57907D7AB52D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67E796C9-F414-49F5-AA76-57907D7AB52D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67E796C9-F414-49F5-AA76-57907D7AB52D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A3615FD7-99D7-439F-BFAB-E92A3939F49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3615FD7-99D7-439F-BFAB-E92A3939F49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3615FD7-99D7-439F-BFAB-E92A3939F49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3615FD7-99D7-439F-BFAB-E92A3939F49A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{28CFA86C-5E9B-4D98-A2D1-4E987818AA7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{28CFA86C-5E9B-4D98-A2D1-4E987818AA7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28CFA86C-5E9B-4D98-A2D1-4E987818AA7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,15 +45,19 @@ Global
 		{921D5D8A-1790-44B0-8209-D35C5D2F4EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{921D5D8A-1790-44B0-8209-D35C5D2F4EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{921D5D8A-1790-44B0-8209-D35C5D2F4EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B38E1EA-F78E-456E-9214-99D37571A85E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B38E1EA-F78E-456E-9214-99D37571A85E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B38E1EA-F78E-456E-9214-99D37571A85E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B38E1EA-F78E-456E-9214-99D37571A85E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A3615FD7-99D7-439F-BFAB-E92A3939F49A} = {4FAE180D-5435-43A7-A748-6C0BF8963ED0}
 		{CA8F9E8F-1A6B-4875-8FC1-D4CDF22C3E46} = {4FAE180D-5435-43A7-A748-6C0BF8963ED0}
 		{69570637-7FD0-4B25-9D29-69CE78B435DF} = {4FAE180D-5435-43A7-A748-6C0BF8963ED0}
 		{921D5D8A-1790-44B0-8209-D35C5D2F4EAF} = {4FAE180D-5435-43A7-A748-6C0BF8963ED0}
+		{8B38E1EA-F78E-456E-9214-99D37571A85E} = {4FAE180D-5435-43A7-A748-6C0BF8963ED0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BCE29C2-4500-495F-A7A5-3B654A734375}

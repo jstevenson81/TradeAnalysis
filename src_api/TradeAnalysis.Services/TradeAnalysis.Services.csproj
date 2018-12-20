@@ -6,11 +6,8 @@
 
   <ItemGroup>
     <PackageReference Include="Cosmonaut" Version="2.7.1" />
-    <PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="2.2.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\TradeAnalysis.Models\TradeAnalysis.Models.csproj" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
   </ItemGroup>
 
 </Project>

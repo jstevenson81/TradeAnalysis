@@ -14,9 +14,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TradeAnalysis.Contracts\TradeAnalysis.Contracts.csproj" />
-    <ProjectReference Include="..\TradeAnalysis.Data\TradeAnalysis.Data.csproj" />
     <ProjectReference Include="..\TradeAnalysis.Mapping\TradeAnalysis.Mapping.csproj" />
     <ProjectReference Include="..\TradeAnalysis.Models\TradeAnalysis.Models.csproj" />
+    <ProjectReference Include="..\TradeAnalysis.Services\TradeAnalysis.Services.csproj" />
   </ItemGroup>
 
 </Project>

@@ -52,6 +52,16 @@ namespace TradeAnalysis.Models
 
     }
 
+    [AttributeUsage(AttributeTargets.Property, AllowMultiple = false, Inherited = false)]
+    public class PartitionKeyAttribute : Attribute
+    {
+        public PartitionKeyAttribute(string path)
+        {
+            Path = path;
+        }
+        public string Path { get; set; }
+    }
+
     public class User : ModelBase
     {
         public string DisplayName { get; set; }

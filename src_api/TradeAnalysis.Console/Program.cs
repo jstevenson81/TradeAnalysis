@@ -1,19 +1,21 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Binance.Net.Objects;
 using CryptoExchange.Net.Authentication;
+using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using TradeAnalysis.Mapping.Extensions;
 using TradeAnalysis.Mapping.Profiles;
 using TradeAnalysis.Models;
+using TradeAnalysis.Services.DependencyInjection.Infrastructure;
 
 namespace TradeAnalysis.Console.App
 {
     class Program
     {
-
 
         static async Task Main(string[] args)
         {
