@@ -1,7 +1,4 @@
-﻿using AutoMapper;
-using Binance.Net.Objects;
-
-namespace TradeAnalysis.Mapping.Profiles.Trade
+﻿namespace Tradelyzer.Mapping.Profiles.Trade
 {
     public class BinanceTradeToTrade : Profile
     {

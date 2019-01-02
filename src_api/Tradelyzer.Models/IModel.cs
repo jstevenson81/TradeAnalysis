@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TradeAnalysis.Models
+namespace Tradelyzer.Models
 {
     public interface IModel: IDisposable
     {
@@ -65,7 +65,7 @@ namespace TradeAnalysis.Models
     public class User : ModelBase
     {
         public string DisplayName { get; set; }
-        public List<string> EmailAddresses { get; set; }
+        public List<UserEmailAddress> EmailAddresses { get; set; }
 
         public User()
         {

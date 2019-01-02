@@ -1,7 +1,4 @@
-﻿using AutoMapper;
-using Binance.Net.Objects;
-
-namespace TradeAnalysis.Mapping.Profiles.Order
+﻿namespace Tradelyzer.Mapping.Profiles.Order
 {
     public class BinanceOrderToOrder: Profile
     {

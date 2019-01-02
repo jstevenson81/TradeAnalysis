@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tradelyzer.Api", "Tradelyzer.Api\Tradelyzer.Api.csproj", "{AABB80C0-E83C-4F16-AB2B-770E8A51FE3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Models", "01 - Models", "{5076595E-40A1-4259-9F4A-235C7681989C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Contracts", "02 - Contracts", "{9A722724-2501-4CDC-8D16-45EB46B69D40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tradelyzer.Models", "Tradelyzer.Models\Tradelyzer.Models.csproj", "{5768E041-8802-44F1-AD3B-06999DD61226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tradelyzer.Contracts", "Tradelyzer.Contracts\Tradelyzer.Contracts.csproj", "{749262F3-F9E0-44E7-83C0-A489A5ADAE5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tradelyzer.Mapping", "Tradelyzer.Mapping\Tradelyzer.Mapping.csproj", "{07539447-C03D-4769-9B3B-D3BE9DCF910B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AABB80C0-E83C-4F16-AB2B-770E8A51FE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AABB80C0-E83C-4F16-AB2B-770E8A51FE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AABB80C0-E83C-4F16-AB2B-770E8A51FE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AABB80C0-E83C-4F16-AB2B-770E8A51FE3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5768E041-8802-44F1-AD3B-06999DD61226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5768E041-8802-44F1-AD3B-06999DD61226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5768E041-8802-44F1-AD3B-06999DD61226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5768E041-8802-44F1-AD3B-06999DD61226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{749262F3-F9E0-44E7-83C0-A489A5ADAE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{749262F3-F9E0-44E7-83C0-A489A5ADAE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{749262F3-F9E0-44E7-83C0-A489A5ADAE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{749262F3-F9E0-44E7-83C0-A489A5ADAE5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07539447-C03D-4769-9B3B-D3BE9DCF910B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07539447-C03D-4769-9B3B-D3BE9DCF910B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07539447-C03D-4769-9B3B-D3BE9DCF910B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07539447-C03D-4769-9B3B-D3BE9DCF910B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5768E041-8802-44F1-AD3B-06999DD61226} = {5076595E-40A1-4259-9F4A-235C7681989C}
+		{749262F3-F9E0-44E7-83C0-A489A5ADAE5B} = {9A722724-2501-4CDC-8D16-45EB46B69D40}
+		{07539447-C03D-4769-9B3B-D3BE9DCF910B} = {9A722724-2501-4CDC-8D16-45EB46B69D40}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A5A14E8-2AF9-4AB4-AF62-A30D081C8082}
+	EndGlobalSection
+EndGlobal
